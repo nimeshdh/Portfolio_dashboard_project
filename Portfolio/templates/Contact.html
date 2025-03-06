@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Nimesh Dhakal</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="contact-wrapper">
+                        <div class="contact-header text-center">
+                            <h2>Contact Me</h2>
+                            <p class="subtitle">Feel free to reach out to me for  collaboration opportunities or to Get in touch.</p>
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col-md-5">
+                                <div class="contact-info">
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div class="info-content">
+                                            <h4>Location</h4>
+                                            <p>Baudha, Kathmandu, Nepal</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <div class="info-content">
+                                            <h4>Email</h4>
+                                            <p>nimeshdhakal508@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-phone"></i>
+                                        <div class="info-content">
+                                            <h4>Phone</h4>
+                                            <p>+977 9847374201</p>
+                                        </div>
+                                    </div>
+                                    <div class="social-links">
+                                        <a href="https://www.facebook.com/nimesh.dhakal.16/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://x.com/nime3143" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.linkedin.com/in/nimesh-dhakal-a05238312/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="contact-form">
+                                    <form action="#" method="POST">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Your Email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Subject" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                        </div>
+                                        <button type="submit" class="submit-btn">Send Message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'Footer.html' %}
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

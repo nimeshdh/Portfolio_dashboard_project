@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimesh Dhakal</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Add after your existing CSS links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Slideshow Indicators-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+
+    <!-- bio sections  -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <div class="flip-card animate__animated animate__fadeInLeft">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="{{ url_for('static', filename='images/photo.jpg') }}" alt="Profile Image" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Nimesh</h1>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 text-center text-md-start">
+                <h1 class="fw-bold display-4 animate__animated animate__fadeInDown">Nimesh Dhakal</h1>
+                <p class="lead text-muted animate__animated animate__fadeInUp">Passionate IT student | Web Developer</p>
+                <p class="fs-5 animate__animated animate__fadeInUp">Hello, I'm Nimesh, a student currently pursuing my Bachelor's degree at Texas College of Management and IT.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Combined Expertise & Experience Section -->
+<section class="expertise-section">
+    <div class="container">
+        <div class="section-header text-center mb-4">
+            <h2>My Expertise & Experience</h2>
+            <p class="section-subtitle">Combining technical skills with practical experience</p>
+        </div>
+
+        <div class="expertise-container">
+
+        <div class="expertise-grid">
+            <div class="expertise-card">
+                <div class="expertise-image">
+                    <img src="{{ url_for('static', filename='images/uiux.jpg') }}" alt="UI/UX Design">
+                </div>
+                <div class="expertise-content">
+                    <div class="expertise-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">User Interface</span>
+                        <span class="tech-badge">User Experience</span>
+                        <span class="tech-badge">Responsive Design</span>
+                    </div>
+                    <p>Creating user-friendly and visually appealing interfaces through intuitive layouts and improved user experiences.</p>
+                </div>
+            </div>
+
+            <div class="expertise-card">
+                <div class="expertise-image">
+                    <img src="{{ url_for('static', filename='images/Fullstack.jpg') }}" alt="Full Stack Development">
+                </div>
+                <div class="expertise-content">
+                    <div class="expertise-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Full Stack Development</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Flask</span>
+                    </div>
+                    <p>Building complete web applications with modern front-end and back-end technologies.</p>
+                </div>
+            </div>
+
+            <div class="expertise-card">
+                <div class="expertise-image">
+                    <img src="{{ url_for('static', filename='images/Java.jpg') }}" alt="Java Development">
+                </div>
+                <div class="expertise-content">
+                    <div class="expertise-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java Development</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Core Java</span>
+                        <span class="tech-badge">OOP</span>
+                        <span class="tech-badge">Java Frameworks</span>
+                    </div>
+                    <p>Developing robust software solutions with Java, focusing on scalable and efficient applications.</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    </div>
+</section>
+<!---->
+<!---->
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+{% include 'Footer.html' %}
+<!-- Bootstrap JS -->
+
+</body>
+</html>

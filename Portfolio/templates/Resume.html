@@ -1,0 +1,116 @@
+<!-- templates/resume.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Nimesh Dhakal</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</head>
+<body>
+
+    {% include 'header.html' %}
+    <!-- Education Section -->
+    <section id="education" class="mt-5 container">
+        <h2 class="text-center mb-4">Education</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>SNo</th>
+                        <th>Educational Institute</th>
+                        <th>Level</th>
+                        <th>GPA</th>
+                        <th>Pass Year</th>
+                        <th>Board</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Arunima Secondary School</td>
+                        <td>SEE</td>
+                        <td>3.40</td>
+                        <td>2021</td>
+                        <td>NEB</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Arunima Secondary School</td>
+                        <td>+2</td>
+                        <td>3.45</td>
+                        <td>2023</td>
+                        <td>NEB</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Interests & Hobbies -->
+    <section id="interest" class="mt-5 container">
+        <h2 class="text-center mb-4">Interests & Hobbies</h2>
+        <div class="row text-center">
+            <div class="col-md-6 card p-3 shadow-lg">
+                <h4>Interests</h4>
+                <ul>
+                    <li>Travelling</li>
+                    <li>Playing Games</li>
+                    <li>Cooking</li>
+                </ul>
+            </div>
+            <div class="col-md-6 card p-3 shadow-lg">
+                <h4>Hobbies</h4>
+                <ul>
+                    <li>Coding</li>
+                    <li>Playing Games</li>
+                    <li>Drawing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="mt-5 container">
+        <h2 class="text-center mb-4">Achievements</h2>
+        <div class="card p-3 shadow-lg">
+            <ul>
+                <li>Winner of Coding Competition at Texas College (2023)</li>
+                <li>Certified in Web Development by Udemy</li>
+                <li>Top Performer in AI & Machine Learning Workshop</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mt-5 container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row text-center">
+            <div class="col-md-6 card p-3 shadow-lg">
+                <h4>Solar Tracker IoT Project</h4>
+                <p>Designed an IoT-based solar tracking system that maximizes energy efficiency.</p>
+            </div>
+            <div class="col-md-6 card p-3 shadow-lg">
+                <h4>Management Information System</h4>
+                <p>Developed an MIS using Java, OOP principles, and file handling.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    {% include 'Footer.html' %}
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

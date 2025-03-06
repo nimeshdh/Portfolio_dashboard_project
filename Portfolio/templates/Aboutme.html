@@ -1,0 +1,96 @@
+<!-- templates/aboutme.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Nimesh Dhakal</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    
+    <style>
+        /* Bio Section Styling */
+        .bio {
+            background: #f8f9fa; /* Light grey background */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        .bio h2 {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .bio p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <!-- Bio Section -->
+<section class="about-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="about-card">
+                    <div class="profile-header">
+                        <div class="profile-image">
+                            <img src="{{ url_for('static', filename='images/photo.jpg') }}" alt="Nimesh Dhakal">
+                        </div>
+                        <h1 class="profile-name">Nimesh Dhakal</h1>
+                        <p class="profile-title">IT Student & Web Developer</p>
+                    </div>
+                    
+                    <div class="bio-content">
+                        <h2>About Me</h2>
+                        <div class="bio-text">
+                            <p>Hi, I'm <strong>Nimesh Dhakal</strong>, a student currently pursuing my Bachelor's degree at 
+                            <strong>Texas College of Management and IT</strong>. I was born to <strong>Mr. Madhav Dhakal</strong> 
+                            and <strong>Shanta Dhakal</strong> on <strong>January 9, 2006</strong>.</p>
+                            
+                            <p>I am originally from <strong>Baudha, Mahankal-06, Kathmandu</strong>. Growing up as a teenager, 
+                            I've always been fascinated by <strong>Artificial Intelligence (AI)</strong>.</p>
+                        </div>
+                        
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Bachelor's Student at Texas College</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Baudha, Kathmandu</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-code"></i>
+                                <span>Web Development Enthusiast</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    {% include 'Footer.html' %}
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
